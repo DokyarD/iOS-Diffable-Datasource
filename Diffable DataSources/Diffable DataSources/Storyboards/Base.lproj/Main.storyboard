@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ogg-BN-fKw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Diffable Datasource-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeVC" customModule="Diffable_DataSources" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Diffable DataSource" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EO-yT-UPj">
+                                <rect key="frame" x="15" y="243" width="384" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5N1-ov-OTe">
+                                <rect key="frame" x="15" y="694" width="384" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5N1-ov-OTe" secondAttribute="height" multiplier="384:55" id="9Ln-NS-PzW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                <state key="normal" title="Diffable TableView Datasource" backgroundImage="Untitled">
+                                    <color key="titleColor" red="0.0" green="0.27696361120136986" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="8bL-JP-duM" kind="show" id="QIM-XB-r5w"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TestImg" translatesAutoresizingMaskIntoConstraints="NO" id="uEk-0i-83o">
+                                <rect key="frame" x="132" y="329" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uEk-0i-83o" secondAttribute="height" multiplier="1:1" id="F8r-5l-JqA"/>
+                                    <constraint firstAttribute="width" constant="150" id="okI-vc-NVw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uEk-0i-83o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pzb-jj-CuS"/>
+                            <constraint firstItem="uEk-0i-83o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TwF-Qh-fQN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="2EO-yT-UPj" secondAttribute="trailing" constant="15" id="bRc-Fs-dPg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5N1-ov-OTe" secondAttribute="trailing" constant="15" id="bnM-am-Nac"/>
+                            <constraint firstItem="5N1-ov-OTe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="j1X-Bb-SI5"/>
+                            <constraint firstItem="2EO-yT-UPj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="vEt-Ee-8OP"/>
+                            <constraint firstItem="2EO-yT-UPj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="wfB-es-RmC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5N1-ov-OTe" secondAttribute="bottom" constant="25" id="yY5-d0-yQg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Diffable Datasource" id="cpA-kW-ESv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="108.48214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SDb-F9-7cW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ogg-BN-fKw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="THG-8J-iEz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yZP-r1-hjH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxA-1M-tva" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="107.8125"/>
+        </scene>
+        <!--Diffable Table ViewVC-->
+        <scene sceneID="6lU-mM-8vJ">
+            <objects>
+                <viewController storyboardIdentifier="DiffableTableViewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8bL-JP-duM" customClass="DiffableTableViewVC" customModule="Diffable_DataSources" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3EI-bg-uUo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJO-Ea-Yvb">
+                                <rect key="frame" x="10" y="15" width="399" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" placeholder="Search" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbN-NQ-KHR">
+                                <rect key="frame" x="0.0" y="36" width="414" height="56"/>
+                                <color key="tintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="searchField.textColor">
+                                        <color key="value" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="8bL-JP-duM" id="lMf-W9-aU7"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="11c-yu-Lf2">
+                                <rect key="frame" x="0.0" y="112" width="414" height="696"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="zM8-cO-Fbx">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zM8-cO-Fbx" id="4R9-Rg-kXq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="8bL-JP-duM" id="0h6-eV-Piu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FbN-NQ-KHR" firstAttribute="trailing" secondItem="Rvn-I0-mwq" secondAttribute="trailing" id="1C6-ua-jqc"/>
+                            <constraint firstAttribute="bottom" secondItem="11c-yu-Lf2" secondAttribute="bottom" id="9RC-jj-V4d"/>
+                            <constraint firstItem="11c-yu-Lf2" firstAttribute="top" secondItem="FbN-NQ-KHR" secondAttribute="bottom" constant="20" id="Q1h-9i-3hw"/>
+                            <constraint firstItem="UJO-Ea-Yvb" firstAttribute="leading" secondItem="Rvn-I0-mwq" secondAttribute="leading" constant="10" id="a4g-DI-vqY"/>
+                            <constraint firstItem="11c-yu-Lf2" firstAttribute="leading" secondItem="Rvn-I0-mwq" secondAttribute="leading" id="c1p-eq-bMN"/>
+                            <constraint firstItem="FbN-NQ-KHR" firstAttribute="top" secondItem="UJO-Ea-Yvb" secondAttribute="bottom" id="cDR-7Q-6k4"/>
+                            <constraint firstItem="UJO-Ea-Yvb" firstAttribute="top" secondItem="Rvn-I0-mwq" secondAttribute="top" constant="15" id="lC9-Rm-Zwj"/>
+                            <constraint firstItem="Rvn-I0-mwq" firstAttribute="trailing" secondItem="11c-yu-Lf2" secondAttribute="trailing" id="s7X-Iu-NvT"/>
+                            <constraint firstItem="FbN-NQ-KHR" firstAttribute="leading" secondItem="Rvn-I0-mwq" secondAttribute="leading" id="xmy-RS-0b6"/>
+                            <constraint firstItem="Rvn-I0-mwq" firstAttribute="trailing" secondItem="UJO-Ea-Yvb" secondAttribute="trailing" constant="5" id="zW5-PP-OQx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rvn-I0-mwq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IC0-Yr-uvc">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="XFW-kc-1lC">
+                            <connections>
+                                <action selector="didTapAddButton" destination="8bL-JP-duM" id="mQf-mT-EbI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="FbN-NQ-KHR" id="BL0-C4-aWG"/>
+                        <outlet property="tableView" destination="11c-yu-Lf2" id="JxV-5C-xTR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AlZ-7Q-Obz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TestImg" width="3072" height="3072"/>
+        <image name="Untitled" width="2048" height="4048"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>
